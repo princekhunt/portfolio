@@ -261,7 +261,7 @@
   <section id="contact" class="contact">
     <header id="header">
       <div class="container" style="background: none ;">
-        <h2><a style="color: white;" href="mailto:info@princekhunt.com">info@princekhunt.com</a></h2>
+        <h2><a style="color: white; cursor: pointer;" onclick="sendEmail('info', 'princekhunt.com')">info[at]princekhunt[dot]com</a></h2>
       </div>
     </header>
 
@@ -303,5 +303,11 @@ setTimeout(function(){
 
 }, 3000);
 </script>  
+
+<script>
+   function sendEmail(name, domain){
+       location.href = 'mailto:' + name + '@' + domain;
+    }
+</script>
 
 </html>
