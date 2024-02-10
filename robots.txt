@@ -6,6 +6,8 @@ User-agent: googlebot-mobile
 Disallow: 
 User-agent: Slurp
 Disallow: 
+User-agent: bingbot
+Allow: /
 User-agent: *
 Disallow: /
 Disallow: /cgi-bin/
